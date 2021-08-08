@@ -1,0 +1,36 @@
+.assignment {
+  width: 984px;
+  .contentHeader {
+    margin-bottom: 6px;
+  }
+  .menu {
+    width: 320px;
+  }
+  .content {
+    width: 584px;
+  }
+  .senderPicture {
+    width: 100%;
+    margin-top: -10px;
+  }
+  .filebtn {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .answerList {
+    text-indent: 1rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  a {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .editorBtn {
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+  }
+}
