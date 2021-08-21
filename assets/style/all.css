@@ -12805,6 +12805,7 @@ code {
 
 .sidebar {
   width: 296px;
+  min-height: 100vh;
   padding: 32px 0;
   background: #f8f9fa;
   display: -webkit-box;
@@ -12899,7 +12900,7 @@ code {
 }
 
 .admin {
-  width: 984px;
+  width: 100%;
 }
 
 .admin .idArea .icon {

@@ -8,7 +8,6 @@ var icon = document.querySelector('.js-icon'); //side menu active
 function menuActive() {
   nav.forEach(function (item) {
     if (item.getAttribute('data-name') === item.getAttribute('data-current')) {
-      console.log(item);
       item.setAttribute('class', 'nav-item px-6 mb-4 active');
     }
   });

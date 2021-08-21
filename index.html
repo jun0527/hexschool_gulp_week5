@@ -79,10 +79,15 @@
   <div class="header d-flex justify-content-between p-6">
     <div class="d-flex align-items-end">
       <h2 class="h4 fw-bold me-7 mb-0">Assignment</h2>
-      <a class="text-dark fw-bold d-flex align-items-center" href="javascript:;" class="mb-0">
+      <a class="text-dark fw-bold d-flex align-items-center mb-0" href="javascript:;" type="button" id="coursesList" data-bs-toggle="dropdown" aria-expanded="false">
         All Courses
         <span class="material-icons-outlined text-success ms-2">expand_more</span>
       </a>
+      <ul class="dropdown-menu" aria-labelledby="coursesList">
+        <li><a class="dropdown-item" href="#">All Courses</a></li>
+        <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
+        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+      </ul>
     </div>
     <div class="d-flex">
       <a class="text-dark" href="javascript:;">
@@ -95,63 +100,76 @@
   </div>
   <div class="px-6 pt-3 pb-6">
     <div class="contentHeader d-flex justify-content-between align-items-end">
-      <a class="text-dark fw-bold d-flex align-items-center" href="javascript:;" class="mb-0">
+      <a class="text-dark fw-bold d-flex align-items-center mb-0" href="javascript:;" type="button" id="chapterList" data-bs-toggle="dropdown" aria-expanded="false">
         All (4)
         <span class="material-icons-outlined text-success ms-2">expand_more</span>
       </a>
+      <ul class="dropdown-menu" aria-labelledby="chapterList">
+        <li><a class="dropdown-item" href="#">All</a></li>
+        <li><a class="dropdown-item" href="#">Chapter Assignment</a></li>
+        <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+      </ul>
       <p class="text-secondary fs-8 mb-0">2 comments</p>
     </div>
     <div class="d-flex">
-      <div class="menu list-group me-4">
-        <a href="#" class="list-group-item list-group-item-action active p-3" aria-current="true">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4 class="fs-8 mb-1">Chapter Assignment 2</h4>
-              <h3 class="h6 fw-bold mb-0">Please check this file…</h3>
+      <ul class="menu list-unstyled list-group me-4">
+        <li>
+          <a href="#" class="list-group-item list-group-item-action active p-3" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h4 class="fs-8 mb-1">Chapter Assignment 2</h4>
+                <h3 class="h6 fw-bold mb-0">Please check this file…</h3>
+              </div>
+              <div>
+                <p class="fs-8 text-end lh-sm mb-2">4 hrs ago</p>
+                <p class="fs-8 text-end lh-sm mb-0">Emily Wang</p>
+              </div>
             </div>
-            <div>
-              <p class="fs-8 text-end lh-sm mb-2">4 hrs ago</p>
-              <p class="fs-8 text-end lh-sm mb-0">Emily Wang</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h4 class="fs-8 mb-1">Chapter Assignment 1</h4>
+                <h3 class="h6 fw-bold mb-0">My Homework</h3>
+              </div>
+              <div>
+                <p class="fs-8 text-end lh-sm mb-2">12 hrs ago</p>
+                <p class="fs-8 text-end lh-sm mb-0">David Xu</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4 class="fs-8 mb-1">Chapter Assignment 1</h4>
-              <h3 class="h6 fw-bold mb-0">My Homework</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h4 class="fs-8 mb-1">Final Assignment</h4>
+                <h3 class="h6 fw-bold mb-0">Have a problem with this…</h3>
+              </div>
+              <div>
+                <p class="fs-8 text-end lh-sm mb-2">18 hrs ago</p>
+                <p class="fs-8 text-end lh-sm mb-0">Tony Wei</p>
+              </div>
             </div>
-            <div>
-              <p class="fs-8 text-end lh-sm mb-2">12 hrs ago</p>
-              <p class="fs-8 text-end lh-sm mb-0">David Xu</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h4 class="fs-8 mb-1">Final Assignment</h4>
+                <h3 class="h6 fw-bold mb-0">Did I do it right?</h3>
+              </div>
+              <div>
+                <p class="fs-8 text-end lh-sm mb-2">19 hrs ago</p>
+                <p class="fs-8 text-end lh-sm mb-0">Christina Lin</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4 class="fs-8 mb-1">Final Assignment</h4>
-              <h3 class="h6 fw-bold mb-0">Have a problem with this…</h3>
-            </div>
-            <div>
-              <p class="fs-8 text-end lh-sm mb-2">18 hrs ago</p>
-              <p class="fs-8 text-end lh-sm mb-0">Tony Wei</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
-          <div class="d-flex justify-content-between">
-            <div>
-              <h4 class="fs-8 mb-1">Final Assignment</h4>
-              <h3 class="h6 fw-bold mb-0">Did I do it right?</h3>
-            </div>
-            <div>
-              <p class="fs-8 text-end lh-sm mb-2">19 hrs ago</p>
-              <p class="fs-8 text-end lh-sm mb-0">Christina Lin</p>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </li>
+      </ul>
       <div class="content">
         <div class="card mb-5">
           <div class="card-header d-flex justify-content-between align-items-center px-4 py-3">
